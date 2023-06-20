@@ -219,6 +219,15 @@ The_Chess_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 The_Chess_SOURCE_DIR:STATIC=/Users/artemgavrikov/GitHub/The_Chess
 
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=/Users/artemgavrikov/GitHub/The_Chess/cmake-build-debug
+
+//Value Computed by CMake
+main_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=/Users/artemgavrikov/GitHub/The_Chess
+
 
 ########################
 # INTERNAL cache entries
