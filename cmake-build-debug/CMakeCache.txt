@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+App_BINARY_DIR:STATIC=/Users/artemgavrikov/GitHub/The_Chess/cmake-build-debug
+
+//Value Computed by CMake
+App_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+App_SOURCE_DIR:STATIC=/Users/artemgavrikov/GitHub/The_Chess
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -209,6 +218,12 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/opt/homebrew/lib/cmake/SFML
+
+//Path to a file.
+SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 
 //Value Computed by CMake
 The_Chess_BINARY_DIR:STATIC=/Users/artemgavrikov/GitHub/The_Chess/cmake-build-debug

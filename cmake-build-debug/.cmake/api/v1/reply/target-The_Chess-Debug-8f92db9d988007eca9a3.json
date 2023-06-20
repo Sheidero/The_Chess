@@ -11,9 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"link_directories",
 			"target_link_libraries",
-			"add_definitions",
 			"include_directories"
 		],
 		"files" : 
@@ -28,31 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 17,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 20,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 14,
-				"parent" : 0
-			},
-			{
-				"command" : 4,
-				"file" : 0,
-				"line" : 16,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -63,35 +49,22 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics"
-				},
-				{
-					"fragment" : "-std=c++17"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 4,
-					"define" : "SFML_STATIC"
+					"fragment" : " -std=c++11 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
-					"path" : "/Users/artemgavrikov/GitHub/The_Chess/ext/SFML/include"
+					"backtrace" : 3,
+					"path" : "/ext/SFML/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/homebrew/include"
 				}
 			],
 			"language" : "CXX",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "17"
-			},
 			"sourceIndexes" : 
 			[
 				0
@@ -104,7 +77,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-std=c++11 -g",
 				"role" : "flags"
 			},
 			{
@@ -112,37 +85,32 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-Wl,-rpath,/opt/homebrew/lib",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 2,
-				"fragment" : "-L/Users/artemgavrikov/GitHub/The_Chess/ext/SFML/lib",
-				"role" : "libraryPath"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/Users/artemgavrikov/GitHub/The_Chess/ext/SFML/lib",
+				"fragment" : "/opt/homebrew/lib/libsfml-graphics.2.5.1.dylib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lsfml-audio",
+				"backtrace" : 2,
+				"fragment" : "/opt/homebrew/lib/libsfml-audio.2.5.1.dylib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lsfml-graphics",
+				"backtrace" : 2,
+				"fragment" : "/opt/homebrew/lib/libsfml-network.2.5.1.dylib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lsfml-network",
+				"backtrace" : 2,
+				"fragment" : "/opt/homebrew/lib/libsfml-window.2.5.1.dylib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-lsfml-system",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "-lsfml-window",
+				"backtrace" : 2,
+				"fragment" : "/opt/homebrew/lib/libsfml-system.2.5.1.dylib",
 				"role" : "libraries"
 			}
 		],

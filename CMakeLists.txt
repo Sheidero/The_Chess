@@ -1,24 +1,12 @@
-cmake_minimum_required(VERSION 3.24) # Проверка версии CMake.
-# Если версия установленой программы
-# старее указаной, произойдёт аварийный выход.
+cmake_minimum_required(VERSION 3.14)
+project(The_Chess)
 
-set(PROJECT_NAME The_Chess)				 # имя проекта
-project("${PROJECT_NAME}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+set(SOURCE_FILES main.cpp)
+add_executable(The_Chess ${SOURCE_FILES})
+include_directories(/ext/SFML/include/)
 
-set(CMAKE_CXX_STANDARD 17)			 # устанавливаем 17 стандарт языка
-set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
-
-
-add_definitions(-DSFML_STATIC)		 # дефайны
-
-include_directories("ext/SFML/include/")	# добавляем директории
-link_directories("ext/SFML/lib/")
-add_executable("${PROJECT_NAME}" main.cpp)
-
-target_link_libraries("${PROJECT_NAME}" libsfml-audio.dylib
-        libsfml-graphics.dylib
-        libsfml-network.dylib
-        libsfml-system.dylib
-        libsfml-window.dylib)
+find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
+include_directories(${SFML_INCLUDE_DIRS})
+target_link_libraries(The_Chess sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
