@@ -2,9 +2,11 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(2560, 1600), "The Chess");
+    sf::Texture background;
+    background.loadFromFile("../res/images/board1.png");
+    sf::Sprite backgrounds(background);
+    backgrounds.setScale(3,3);
 
     while (window.isOpen())
     {
@@ -16,7 +18,7 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(backgrounds);
         window.display();
     }
 

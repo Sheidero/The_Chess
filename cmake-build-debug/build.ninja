@@ -49,7 +49,7 @@ build cmake_object_order_depends_target_The_Chess: phony || CMakeFiles/The_Chess
 build CMakeFiles/The_Chess.dir/main.cpp.o: CXX_COMPILER__The_Chess_Debug /Users/artemgavrikov/GitHub/The_Chess/main.cpp || cmake_object_order_depends_target_The_Chess
   DEP_FILE = CMakeFiles/The_Chess.dir/main.cpp.o.d
   FLAGS = -std=c++11 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics
-  INCLUDES = -I/ext/SFML/include -isystem /opt/homebrew/include
+  INCLUDES = -I/ext/SFML/include -I/res/images -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/The_Chess.dir
   OBJECT_FILE_DIR = CMakeFiles/The_Chess.dir
 
