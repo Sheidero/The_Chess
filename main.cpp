@@ -4,7 +4,7 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(2560, 1600), "The Chess");
     sf::Texture background;
-    background.loadFromFile("../res/images/board1.png");
+    background.loadFromFile("../res/images/board1.jpg");
     sf::Sprite backgrounds(background);
     backgrounds.setScale(3,3);
 
