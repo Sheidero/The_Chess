@@ -181,12 +181,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "inc/game.cpp",
+			"path" : "src/game.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "inc/game.h",
+			"path" : "inc/game.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

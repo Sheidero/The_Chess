@@ -1,4 +1,4 @@
-#include "log.hpp"
+#include "../inc/log.hpp"
 
 
 void Log::write_log(const std::string& type_str, const std::string& log_msg) {
