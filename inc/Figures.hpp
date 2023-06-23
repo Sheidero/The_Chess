@@ -1,17 +1,13 @@
-//
-// Created by Артём Гавриков on 22.06.2023.
-//
-
-#ifndef THE_CHESS_FIGURES_HPP
-#define THE_CHESS_FIGURES_HPP
-
 class Figures{
 private:
-
+    // 0 - чёрные, 1 - белые
+    bool m_color;
+    short m_x;
+    short m_y;
 public:
-    Figures(){
+    Figures(bool color, short x, short y){
+        m_color = color;
 
 }
 };
 
-#endif //THE_CHESS_FIGURES_HPP

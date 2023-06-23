@@ -3,7 +3,7 @@ project(The_Chess)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp src/Figures.cpp inc/Figures.hpp)
+set(SOURCE_FILES main.cpp src/Figures.cpp inc/Figures.hpp src/Board.cpp inc/Board.hpp src/game.cpp inc/game.hpp)
 add_executable(The_Chess ${SOURCE_FILES})
 include_directories(/ext/SFML/include/)
 
