@@ -74,6 +74,13 @@ build CMakeFiles/The_Chess.dir/src/game.cpp.o: CXX_COMPILER__The_Chess_Debug /Us
   OBJECT_DIR = CMakeFiles/The_Chess.dir
   OBJECT_FILE_DIR = CMakeFiles/The_Chess.dir/src
 
+build CMakeFiles/The_Chess.dir/src/log.cpp.o: CXX_COMPILER__The_Chess_Debug /Users/artemgavrikov/GitHub/The_Chess/src/log.cpp || cmake_object_order_depends_target_The_Chess
+  DEP_FILE = CMakeFiles/The_Chess.dir/src/log.cpp.o.d
+  FLAGS = -std=c++11 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics
+  INCLUDES = -I/ext/SFML/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/The_Chess.dir
+  OBJECT_FILE_DIR = CMakeFiles/The_Chess.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target The_Chess
@@ -82,7 +89,7 @@ build CMakeFiles/The_Chess.dir/src/game.cpp.o: CXX_COMPILER__The_Chess_Debug /Us
 #############################################
 # Link the executable The_Chess
 
-build The_Chess: CXX_EXECUTABLE_LINKER__The_Chess_Debug CMakeFiles/The_Chess.dir/main.cpp.o CMakeFiles/The_Chess.dir/src/Figures.cpp.o CMakeFiles/The_Chess.dir/src/Board.cpp.o CMakeFiles/The_Chess.dir/src/game.cpp.o | /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-audio.2.5.1.dylib /opt/homebrew/lib/libsfml-network.2.5.1.dylib /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib
+build The_Chess: CXX_EXECUTABLE_LINKER__The_Chess_Debug CMakeFiles/The_Chess.dir/main.cpp.o CMakeFiles/The_Chess.dir/src/Figures.cpp.o CMakeFiles/The_Chess.dir/src/Board.cpp.o CMakeFiles/The_Chess.dir/src/game.cpp.o CMakeFiles/The_Chess.dir/src/log.cpp.o | /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-audio.2.5.1.dylib /opt/homebrew/lib/libsfml-network.2.5.1.dylib /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib
   FLAGS = -std=c++11 -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib  /opt/homebrew/lib/libsfml-audio.2.5.1.dylib  /opt/homebrew/lib/libsfml-network.2.5.1.dylib  /opt/homebrew/lib/libsfml-window.2.5.1.dylib  /opt/homebrew/lib/libsfml-system.2.5.1.dylib
   OBJECT_DIR = CMakeFiles/The_Chess.dir
